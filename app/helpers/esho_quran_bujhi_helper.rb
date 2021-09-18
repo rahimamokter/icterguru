@@ -1,0 +1,2 @@
+module EshoQuranBujhiHelper
+end

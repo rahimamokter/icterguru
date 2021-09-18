@@ -1,0 +1,2 @@
+class EshoQuranBujhiController < ApplicationController
+end

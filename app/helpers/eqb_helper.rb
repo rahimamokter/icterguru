@@ -1,0 +1,2 @@
+module EqbHelper
+end

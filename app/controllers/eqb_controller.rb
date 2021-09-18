@@ -1,0 +1,2 @@
+class EqbController < ApplicationController
+end
