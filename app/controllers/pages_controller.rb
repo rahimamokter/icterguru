@@ -8,6 +8,9 @@ class PagesController < ApplicationController
     def home
     end
 
+    def journals
+    end
+
     def welcome
     end
 
