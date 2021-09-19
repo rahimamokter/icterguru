@@ -53,7 +53,7 @@ group :test do
 end
 
 group :production do
-  # Use postgres as the database for Actual Records in the production version
+  # Use postgres as the database for the Actual Record in the production version
   gem 'pg'
 end
 
