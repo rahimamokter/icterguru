@@ -1,2 +1,0 @@
-class CsitedexpertsController < ApplicationController
-end
