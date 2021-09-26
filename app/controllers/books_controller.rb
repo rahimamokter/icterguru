@@ -19,6 +19,10 @@ class BooksController < ApplicationController
 
     end
 
+    def edit
+        @book = Book.find(params[:id])
+    end
+
     def create 
         @book = Book.new(params.require(:book).permit(:title, :description))
        # render plain: params[:book]
@@ -32,5 +36,23 @@ class BooksController < ApplicationController
         
        
     end
+
+    def update 
+        @book = Book.find(params[:id])
+        if @book.update(params.require(:book).permit(:title, :description))
+            flash[:notice] = "The book entry was updated successfully."
+            redirect_to book_path(@book)
+        else
+          render 'edit'
+        end
+        
+    end
+
+    def destroy
+        @book = Book.find(params[:id])
+        @book.destroy
+        redirect_to @book
+    end
+
 
 end
