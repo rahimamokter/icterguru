@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :articles
   resources :journals#, only: [:show, index]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :books#, only: [:show]
+  resources :books#, only: [:show, :index, :new, :create]
 
  
   get 'about', to: 'pages#about'
