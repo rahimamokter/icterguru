@@ -1,12 +1,12 @@
 <h1>Indexing books</h1>
 
-
 <table>
   <thead>
     <tr>
       <th>Title</th>
       <th>Description</th>
-      <th colspan="3"></th>
+      <th colspan="3">Actions</th>
+      
     </tr>
   </thead>
 
@@ -24,5 +24,10 @@
 </table>
 
 <br>
+<p>
 
-<%= link_to 'New Book', new_book_path %>
+
+<%= link_to 'New Book', new_book_path %> |
+<%= link_to 'Refresh this page', books_path %> 
+
+</p>
